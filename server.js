@@ -13,9 +13,9 @@ const users = require("./controllers/users");
 const db = knex({
   client: "pg",
   connection: {
-    host: "127.0.0.1",
+    host: "postgresql-amorphous-88706",
     user: "krunalhingu",
-    password: "6thvad9om",
+    password: "",
     database: "brain-db",
   },
 });
