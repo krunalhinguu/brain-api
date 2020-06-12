@@ -13,10 +13,8 @@ const users = require("./controllers/users");
 const db = knex({
   client: "pg",
   connection: {
-    host: "postgresql-amorphous-88706",
-    user: "krunalhingu",
-    password: "",
-    database: "brain-db",
+    host: process.env.DATABASE_URL,
+    ssl: true,
   },
 });
 
