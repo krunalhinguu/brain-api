@@ -43,6 +43,6 @@ app.put("/image", image.handleImage(db));
 /* clarifai api call */
 app.post("/imageurl", image.handleApiCall(db));
 
-app.listen(3000, () => {
-  console.log("Server running now");
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Server running on port ${process.env.PORT}`);
 });
